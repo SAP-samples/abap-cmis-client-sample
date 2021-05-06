@@ -1,23 +1,24 @@
-# Title
-These are sample classes that helps you to use SAP Document Management, Integration option, in ABAP BTP.
+# Sample Classes for Using Document Management Service, Integration Option in the SAP BTP ABAP Environment
+Find the collection of sample classes documented here that helps you to use SAP Document Management Service, Integration option, in the SAP BTP ABAP environment.
 ## Description
 Document Management Service, Integration Option lets you build document management capabilities for your business applications using the integration component or the easy-to-use, reusable UI component.
-The following examples can be used for ABAP BTP.
-## Requirements
-Before using the classes, please do the following:
+The following examples can be used for the SAP BTP ABAP environment.
+The classes follow the CMIS specification. For more information, see http://docs.oasis-open.org/cmis/CMIS/v1.1/CMIS-v1.1.html
+## Prerequisites
+Please complete the following steps before using the classes:
 1. Create a service-instance of SAP Document Management, Integration option. 
-Link: https://help.sap.com/viewer/f6e70dd4bffa4b65965b43feed4c9429/Cloud/en-US/bc0f1ec7d5374b968e0b0de6db470c94.html
+For more information, see https://help.sap.com/viewer/f6e70dd4bffa4b65965b43feed4c9429/Cloud/en-US/bc0f1ec7d5374b968e0b0de6db470c94.html
 2. Onboard a repository.
-Link: https://api.sap.com/api/AdminAPI/resource
+For more information, see https://api.sap.com/api/AdminAPI/resource
 3. Install CMIS Workbench, and connect to your repository.
-4. Connect to the ABAP BTP instance, and create a Communication Arrangement for SAP_COM_0668.
+4. Connect to an ABAP BTP instance, and create a Communication Arrangement for SAP_COM_0668.
 
-#### Using CMIS workbench to work with SDI Server
+#### Using CMIS workbench to work with Document Management Service, Integration Option
  - Download CMIS workbench
 
-Download the latest version of CMIS workbench from Apache from here: https://chemistry.apache.org/java/download.html, or download the version with login tabs for CP Document Service and SAP Document Center: refer to https://github.com/SAP/cloud-cmis-workbench
+Download the latest version of CMIS workbench from Apache from from the following URL : https://chemistry.apache.org/java/download.html, or download the version with login tabs for CP Document Service and SAP Document Center: refer to https://github.com/SAP/cloud-cmis-workbench
 
-- Create the service-key for your SDM service instance, with SERVICE_INSTANCE being the name of your instance and SERVICE-KEY is any string
+- Create the service-key for your Document Management Service, Integration Option service instance, with SERVICE_INSTANCE being the name of your instance and SERVICE-KEY is any string
 ``` code
 cf create-service-key SERVICE-INSTANCE SERVICE-KEY
 ```
@@ -35,7 +36,7 @@ cf service-key SERVICE-INSTANCE SERVICE-KEY
  Password : <uaa.clientsecret>
 ```
 
-- Open CMIS workbench and connect to repository
+- Open CMIS workbench and connect to a repository
 ```http
 URL : <endpoints.ecmservice>/browser
 Binding: Browser
@@ -64,17 +65,17 @@ Username : <Bearer token from previous step>
 | zcl_append_content_stream | Shows how to append a content-stream. For non-versioned repository, call append content-stream directly after create document. |
 
 #### Note:
-1. When a Communication Arrangement is created for SAP_COM_0668, a Communication System 'ZSAP_COM_0668' is created internally.
+1. When a Communication Arrangement for SAP_COM_0668,  is created, an internal Communication System named 'ZSAP_COM_0668' is created.
 2. Actions like creating a major version, append content-stream,etc, will be supported only by certain repositories. Please consult with your repository vendor.
-3. The classes CL_CMIS_CLIENT_FACTORY and IF_CMIS_CLIENT talks directly to the SDI service instance. The api calls are metered by the service-instance.
-4. By design, only one instance of SDI is connected to one ABAP-BTP instance. 
-5. You can update the Communication Scenario to connect it with a new instance.
+3. The classes CL_CMIS_CLIENT_FACTORY and IF_CMIS_CLIENT talks directly to the Document Management Service, Integration Option service instance. The api calls are metered by the service-instance.
+4. By design, only one instance of Document Management Service, Integration Option service instance connected to one SAP BTP ABAP instance. 
+5. You can update the Communication Scenario to connect it with a new Document Management Service, Integration Option service instance.
 
 ## Known Issues
 
 ## How to obtain support
 
-[Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
+[Create an issue](https://github.com/SAP-samples/abap-cmis-client-sample/issues) in this repository if you find a bug or have questions about the content.
 You can also create an incident with the component BC-SRV-MCM-SER or BC-CP-CF-SDM-INT.
  
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
