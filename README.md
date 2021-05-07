@@ -1,22 +1,24 @@
 # Sample Classes for Using Document Management Service, Integration Option in the SAP BTP ABAP Environment
-Find the collection of sample classes documented here that helps you to use SAP Document Management Service, Integration option, in the SAP BTP ABAP environment.
+Find the collection of sample classes documented here that helps you to use SAP Document Management Service, Integration option, in the SAP BTP, ABAP environment.
+
 ## Description
 Document Management Service, Integration Option lets you build document management capabilities for your business applications using the integration component or the easy-to-use, reusable UI component.
-The following examples can be used for the SAP BTP ABAP environment.
-The classes follow the CMIS specification. For more information, see http://docs.oasis-open.org/cmis/CMIS/v1.1/CMIS-v1.1.html
+The following examples can be used for the SAP BTP, ABAP environment.
+The classes follow the CMIS specification. For more information, see the [Content Management Interoperability Services (CMIS)](http://docs.oasis-open.org/cmis/CMIS/v1.1/CMIS-v1.1.html) website.
+
 ## Prerequisites
 Please complete the following steps before using the classes:
 1. Create a service-instance of SAP Document Management, Integration option. 
-For more information, see https://help.sap.com/viewer/f6e70dd4bffa4b65965b43feed4c9429/Cloud/en-US/bc0f1ec7d5374b968e0b0de6db470c94.html
+For more information, see [Initial Setup for Document Management Service, Integration Option](https://help.sap.com/viewer/f6e70dd4bffa4b65965b43feed4c9429/Cloud/en-US/bc0f1ec7d5374b968e0b0de6db470c94.html) on SAP Help Portal. 
 2. Onboard a repository.
-For more information, see https://api.sap.com/api/AdminAPI/resource
+For more information, see [SAP API Business Hub - Administrative Operations](https://api.sap.com/api/AdminAPI/resource).
 3. Install CMIS Workbench, and connect to your repository.
 4. Connect to an ABAP BTP instance, and create a Communication Arrangement for SAP_COM_0668.
 
 #### Using CMIS workbench to work with Document Management Service, Integration Option
  - Download CMIS workbench
 
-Download the latest version of CMIS workbench from Apache from from the following URL : https://chemistry.apache.org/java/download.html, or download the version with login tabs for CP Document Service and SAP Document Center: refer to https://github.com/SAP/cloud-cmis-workbench
+Download the [latest version of CMIS workbench](https://chemistry.apache.org/java/download.html) from Apache, or download the [version with login tabs for CP Document Service](https://github.com/SAP/cloud-cmis-workbench) and SAP Document Center.
 
 - Create the service-key for your Document Management Service, Integration Option service-instance, with SERVICE_INSTANCE being the name of your instance and SERVICE-KEY is any string
 ``` code
