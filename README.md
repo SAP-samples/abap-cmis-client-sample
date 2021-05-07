@@ -71,8 +71,6 @@ Username : <Bearer token from previous step>
 4. By design, one instance of Document Management Service, Integration Option service-instance is connected to one SAP BTP ABAP instance. 
 5. You can update the Communication Scenario to connect it with a new Document Management Service, Integration Option service-instance.
 
-## Known Issues
-
 ## How to obtain support
 
 [Create an issue](https://github.com/SAP-samples/abap-cmis-client-sample/issues) in this repository if you find a bug or have questions about the content.
