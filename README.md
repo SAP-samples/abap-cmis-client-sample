@@ -1,3 +1,4 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/abap-cmis-client-sample)](https://api.reuse.software/info/github.com/SAP-samples/abap-cmis-client-sample)
 # Sample Classes for Using Document Management Service, Integration Option in the SAP BTP ABAP Environment
 Find the collection of sample classes documented here that helps you to use SAP Document Management Service, Integration option, in the SAP BTP, ABAP environment.
 
