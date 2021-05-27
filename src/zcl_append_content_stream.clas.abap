@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_append_content_stream IMPLEMENTATION.
+CLASS ZCL_APPEND_CONTENT_STREAM IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     DATA:
       lt_properties  TYPE cmis_t_client_property,
@@ -151,7 +153,7 @@ CLASS zcl_append_content_stream IMPLEMENTATION.
         iv_repository_id = ls_repository-id
         iv_object_id     = lv_object_id
         is_content       = ls_content
-        iv_last_chunk    = abap_true.
+        iv_last_chunk    = abap_true. "this indicates that it is the final chunk. It is optional, and default is false.
 **********************************************************************
 * Finaly, do a check-in                                                                                *
 **********************************************************************
@@ -159,7 +161,7 @@ CLASS zcl_append_content_stream IMPLEMENTATION.
       EXPORTING
         iv_object_id       = lv_object_id
         iv_repository_id   = ls_repository-id
-        iv_major           = abap_false
+        iv_major           = abap_false "this will create a minor-version. For major-version, pass 'abap_true'
         iv_checkin_comment = 'Completed append content-stream'.
   ENDMETHOD.
 ENDCLASS.
