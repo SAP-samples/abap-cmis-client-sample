@@ -70,7 +70,7 @@ Username : <Bearer token from previous step>
 #### Note:
 1. When a Communication Arrangement for SAP_COM_0668,  is created, an internal Communication System named 'ZSAP_COM_0668' is created.
 2. Actions like creating a major version, append content-stream,etc, will be supported only by certain repositories. Please consult with your repository vendor.
-3. The classes CL_CMIS_CLIENT_FACTORY and IF_CMIS_CLIENT talks directly to the Document Management Service, Integration Option service-instance. The api calls are metered by the service-instance.
+3. The classes CL_CMIS_CLIENT_FACTORY2, CL_CMIS_CLIENT_FACTORY (deprecated) and IF_CMIS_CLIENT talks directly to the Document Management Service, Integration Option service-instance. The api calls are metered by the service-instance.
 4. By design, one instance of Document Management Service, Integration Option service-instance is connected to one SAP BTP ABAP instance. 
 5. You can update the Communication Scenario to connect it with a new Document Management Service, Integration Option service-instance.
 6. We have docmented the important methods. If you want more methods to be documented, please reach out to us via support and mention which method you want us to document.
