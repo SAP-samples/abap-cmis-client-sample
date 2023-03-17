@@ -13,7 +13,7 @@ Please complete the following steps before using the classes:
 For more information, see [Initial Setup for Document Management Service, Integration Option](https://help.sap.com/viewer/f6e70dd4bffa4b65965b43feed4c9429/Cloud/en-US/bc0f1ec7d5374b968e0b0de6db470c94.html) on SAP Help Portal. 
 2. Onboard a repository.
 For more information, see [SAP API Business Hub - Administrative Operations](https://api.sap.com/api/AdminAPI/resource).
-3. Install CMIS Workbench, and connect to your repository.
+3. Install CMIS Workbench, and connect to your repository. (Only for development tasks.)
 4. Connect to an ABAP BTP instance, and create a Communication Arrangement for SAP_COM_0668.
 
 #### Using CMIS workbench to work with Document Management Service, Integration Option
